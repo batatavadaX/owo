@@ -9,7 +9,7 @@ DIR='app/main'
 ZIP_FILE_NAME='zipped'
 # get zip file from variable or use default.
 ZIP_LINK="${ZIP_LINK:-"https://codeload.github.com/code-rgb/USERGE-X/zip/alpha"}"
-BUILD_CMD="${BUILD_CMD:-'echo None'}"
+BUILD_CMD="${BUILD_CMD:-"echo None"}"
 # get cmd from variable or use default.
 LAUNCH_CMD="${LAUNCH_CMD:-"bash run"}"
 # hacky cracky.

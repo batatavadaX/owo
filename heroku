@@ -3,21 +3,30 @@
 # error precaution.
 set -e
 
-# get branch from variable or use default.
-BRANCH="${BRANCH:-alpha}"
+# unzip folder
+DIR='app/main'
+
+# default zip file name.
+ZIP_FILE_NAME='zipped'
+
+# get zip file from variable or use default.
+ZIP_LINK="${ZIP_LINK:-https://codeload.github.com/code-rgb/USERGE-X/zip/alpha}"
+
+# get cmd from variable or use default.
+LAUNCH_APP_CMD="${BRANCH:-bash run}"
 
 # directory.
-mkdir -p "UX"
+mkdir -p "app/main"
 
 # fetches latest build.
-wget "https://codeload.github.com/code-rgb/USERGE-X/zip/$BRANCH" -O "UX/$BRANCH.zip"
+wget "$ZIP_LINK" -O "app/$ZIP_FILE_NAME.zip"
 
 # unzipping.
-unzip "UX/$BRANCH.zip"
+unzip "app/$ZIP_FILE_NAME.zip" -d "$DIR"
 
 #run userge-x.
-cd USERGE-X-$BRANCH
-bash run
+cd $DIR
+$LAUNCH_APP_CMD
 
 # stress relief.
 sleep 5

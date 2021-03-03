@@ -1,18 +1,23 @@
 #!bin/bash
 
-
+# error precaution.
 set -e
 
-BRANCH='heroku'
+# get branch from variable or use default.
+BRANCH="${BRANCH:-alpha}"
 
+# directory.
 mkdir -p "UX"
 
+# fetches latest build.
 wget "https://codeload.github.com/code-rgb/USERGE-X/zip/$BRANCH" -O "UX/$BRANCH.zip"
 
+# unzipping.
 unzip "UX/$BRANCH.zip"
 
+#run userge-x.
 cd USERGE-X-$BRANCH
-
 bash run
 
+# stress relief.
 sleep 5

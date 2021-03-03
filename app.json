@@ -1,19 +1,10 @@
 {
-    "name":"USERGE-X",
-    "description":"telegram pluggable userbot",
+    "name":"UX lite",
+    "description":"lel",
     "logo":"https://i.imgur.com/PlXD0aL.png",
     "keywords":[
-        "USERGE-X",
-        "Pyrogram",
-        "Telegram",
-        "pluggable",
-        "Bot",
-        "Userbot",
-        "Inline"
+        "help"
     ],
-    "repository":"https://github.com/code-rgb/USERGE-X",
-    "website":"https://github.com/code-rgb/USERGE-X",
-    "success_url":"https://t.me/userge_x",
     "env":{
         "API_ID":{
             "description":"Get this value from https://my.telegram.org"

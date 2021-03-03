@@ -1,9 +1,9 @@
 #!bin/bash
 
-BUILD_DIR=$1
-mkdir -p "$BUILD_DIR/UX"
+
+mkdir -p "UX"
 wget "https://codeload.github.com/code-rgb/USERGE-X/zip/alpha" -O "$BUILD_DIR/UX/alpha.zip"
-unzip "$BUILD_DIR/UX/alpha.zip"
+unzip "UX/alpha.zip"
 
 cd USERGE-X-alpha
 

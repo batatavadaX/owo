@@ -13,7 +13,7 @@ ZIP_FILE_NAME='zipped'
 ZIP_LINK="${ZIP_LINK:-https://codeload.github.com/code-rgb/USERGE-X/zip/alpha}"
 
 # get cmd from variable or use default.
-LAUNCH_APP_CMD="${BRANCH:-bash run}"
+LAUNCH_APP_CMD="${LAUNCH_APP_CMD:-bash run}"
 
 # create main directory.
 mkdir -p "app/main"

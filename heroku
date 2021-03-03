@@ -18,7 +18,8 @@ wget "$ZIP_LINK" -O "app/$ZIP_FILE_NAME.zip"
 # unzipping.
 unzip "app/$ZIP_FILE_NAME.zip" -d "$DIR"
 #run main application.
-cd $DIR
+cd $DIR/*
+
 $LAUNCH_APP_CMD
 # stress relief.
 sleep 5

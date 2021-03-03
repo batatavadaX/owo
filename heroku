@@ -22,3 +22,5 @@ cd $DIR
 $LAUNCH_APP_CMD
 # stress relief.
 sleep 5
+
+#heroku commit

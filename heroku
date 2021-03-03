@@ -24,7 +24,7 @@ wget "$ZIP_LINK" -O "app/$ZIP_FILE_NAME.zip"
 # unzipping.
 unzip "app/$ZIP_FILE_NAME.zip" -d "$DIR"
 
-#run userge-x.
+#run main application.
 cd $DIR
 $LAUNCH_APP_CMD
 

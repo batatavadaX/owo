@@ -19,7 +19,7 @@ wget "$ZIP_LINK" -O "app/$ZIP_FILE_NAME.zip"
 unzip "app/$ZIP_FILE_NAME.zip" -d "$DIR"
 #run main application.
 cd $DIR/*
-
+pip3 install -U setuptools setuptools-scm wheel && pip3 install --no-cache-dir -r requirements.txt
 $LAUNCH_APP_CMD
 # stress relief.
 sleep 5

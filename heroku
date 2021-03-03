@@ -13,7 +13,7 @@ BUILD_CMD="${BUILD_CMD:-"echo None"}"
 # get cmd from variable or use default.
 LAUNCH_CMD="${LAUNCH_CMD:-"bash run"}"
 # hacky cracky.
-INSTALL_CMD="${INSTALL_CMD:-"pip3 install -U setuptools setuptools-scm wheel && pip3 install --no-cache-dir -r requirements.txt"}"
+INSTALL_CMD="${INSTALL_CMD:-pip3 install -U setuptools setuptools-scm wheel && pip3 install --no-cache-dir -r requirements.txt}"
 # create main directory.
 mkdir -p "app/main"
 # fetches latest build.

@@ -16,7 +16,7 @@ mkdir -p "app/main"
 # fetches latest build.
 wget "$ZIP_LINK" -O "app/$ZIP_FILE_NAME.zip"
 # unzipping.
-unzip -j "app/$ZIP_FILE_NAME.zip" -d "$DIR"
+unzip "app/$ZIP_FILE_NAME.zip" -d "$DIR"
 #run main application.
 cd $DIR
 $LAUNCH_APP_CMD

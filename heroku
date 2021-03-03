@@ -2,7 +2,7 @@
 
 
 mkdir -p "UX"
-wget "https://codeload.github.com/code-rgb/USERGE-X/zip/alpha" -O "$BUILD_DIR/UX/alpha.zip"
+wget "https://codeload.github.com/code-rgb/USERGE-X/zip/alpha" -O "UX/alpha.zip"
 unzip "UX/alpha.zip"
 
 cd USERGE-X-alpha

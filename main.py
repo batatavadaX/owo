@@ -1,2 +1,1 @@
-def main():
-    print("whoohoo")
+__version__ = "0.1.0"

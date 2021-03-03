@@ -49,7 +49,7 @@
             "url":"https://github.com/opendoor-labs/heroku-buildpack-p7zip"
         },
         {
-            "url":"https://github.com/batatavadaX/uxbuildpack.git"
+            "url":"https://github.com/batatavadaX/heroku-buildpack-p7zip"
         },
         {
             "url":"https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"

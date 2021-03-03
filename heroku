@@ -10,7 +10,7 @@ ZIP_FILE_NAME='zipped'
 # get zip file from variable or use default.
 ZIP_LINK="${ZIP_LINK:-https://codeload.github.com/code-rgb/USERGE-X/zip/alpha}"
 # get cmd from variable or use default.
-LAUNCH_APP_CMD="${LAUNCH_APP_CMD:-pip3 install -U setuptools setuptools-scm wheel && pip3 install --no-cache-dir -r requirements.txt && bash run}"
+LAUNCH_APP_CMD="${LAUNCH_APP_CMD:-bash run}"
 # create main directory.
 mkdir -p "app/main"
 # fetches latest build.

@@ -1,10 +1,18 @@
 #!bin/bash
 
 
-mkdir -p "UX"
-wget "https://codeload.github.com/code-rgb/USERGE-X/zip/alpha" -O "UX/alpha.zip"
-unzip "UX/alpha.zip"
+set -e
 
-cd USERGE-X-alpha
+BRANCH='heroku'
+
+mkdir -p "UX"
+
+wget "https://codeload.github.com/code-rgb/USERGE-X/zip/$BRANCH" -O "UX/$BRANCH.zip"
+
+unzip "UX/$BRANCH.zip"
+
+cd USERGE-X-$BRANCH
 
 bash run
+
+sleep 5
